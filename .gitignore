@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jangan track folder luar
+../db.sqlite3
+../venv/
+
+# Virtual environment
+venv/
