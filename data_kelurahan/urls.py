@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from warga.views import PengaduanListView  # tambah import ini
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('warga/', include('warga.urls')),
+    path('pengaduan/', PengaduanListView.as_view(), name='pengaduan-list'),  # top-level
 ]
+
