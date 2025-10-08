@@ -21,7 +21,7 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | Modul | Fitur Utama | Status |
 |--------|--------------|---------|
 | 1 | Inisialisasi project + CBV ListView + DetailView | ✅ |
-| 2 | [Akan diisi setelah modul 2] | ⏳ |
+| 2 | Relasi Model & QuerySet Lanjutan| ✅ |
 | 3 | [Akan diisi setelah modul 3] | ⏳ |
 | 4 | [Akan diisi setelah modul 4] | ⏳ |
 
