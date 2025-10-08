@@ -34,6 +34,3 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 - Struktur MVT (Model–View–Template)
 
 ---
-
-> 💬 *"Progress lebih penting dari kecepatan. Commit kecil tapi konsisten akan menunjukkan dedikasi kamu dalam belajar."*  
-> — *Achmad Noercholis (disarikan dari panduan dosen)*
