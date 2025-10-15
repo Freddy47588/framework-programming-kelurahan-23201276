@@ -22,7 +22,7 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 |--------|--------------|---------|
 | 1 | Inisialisasi project + CBV ListView + DetailView | ✅ |
 | 2 | Relasi Model & QuerySet Lanjutan| ✅ |
-| 3 | [Akan diisi setelah modul 3] | ⏳ |
+| 3 | Interaksi Pengguna dengan Django Forms & CreateView | ✅ |
 | 4 | [Akan diisi setelah modul 4] | ⏳ |
 
 ---
