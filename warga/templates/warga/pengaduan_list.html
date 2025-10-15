@@ -3,6 +3,9 @@
 <head><title>Daftar Pengaduan Warga</title></head>
 <body>
   <h1>Daftar Semua Pengaduan</h1>
+
+  <p><a href="{% url 'pengaduan-tambah' %}">Tambah Pengaduan</a></p>
+  
   <ul>
     {% for aduan in object_list %}
       <li>
