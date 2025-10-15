@@ -1,7 +1,7 @@
 from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse_lazy
 from .models import Warga, Pengaduan
-from .form import WargaForm, PengaduanForm
+from .forms import WargaForm, PengaduanForm
 
 
 class PengaduanListView(ListView):
