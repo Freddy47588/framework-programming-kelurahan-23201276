@@ -1,7 +1,13 @@
-from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse_lazy
+from django.views.generic import UpdateView, DeleteView  # pastikan diimport
 from .models import Warga, Pengaduan
-from .forms import WargaForm, PengaduanForm
+from .forms import WargaForm
+
+class WargaUpdateView(UpdateView):
+    model = Warga
+    form_class = WargaForm
+    template_name = 'warga/warga_form.html'  # pakai form yang sama dari modul 3
+    success_url = reverse_lazy('warga-list')
 
 
 class PengaduanListView(ListView):
