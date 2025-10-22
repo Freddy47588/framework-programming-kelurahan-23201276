@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Daftar Pengaduan Warga</title>
-  </head>
-  <body>
-    <h1>Daftar Semua Pengaduan</h1>
+<head><title>Daftar Pengaduan Warga</title></head>
+<body>
+  <h1>Daftar Semua Pengaduan</h1>
 
-    <p><a href="{% url 'pengaduan-tambah' %}">Tambah Pengaduan</a></p>
-    <a href="{% url 'pengaduan-edit' aduan.pk %}">Edit</a> |
-    <a href="{% url 'pengaduan-hapus' aduan.pk %}">Hapus</a>
-    <ul>
-      {% for aduan in object_list %}
+  <p><a href="{% url 'pengaduan-tambah' %}">Tambah Pengaduan</a></p>
+
+  <ul>
+    {% for aduan in object_list %}
       <li>
         <strong>{{ aduan.judul }}</strong> oleh {{ aduan.pelapor.nama_lengkap }}
         (Status: {{ aduan.get_status_display }})
         <p>{{ aduan.deskripsi }}</p>
+
+        <a href="{% url 'pengaduan-edit' pk=aduan.pk %}">Edit</a> |
+        <a href="{% url 'pengaduan-hapus' pk=aduan.pk %}">Hapus</a>
       </li>
-      {% empty %}
+    {% empty %}
       <li>Tidak ada pengaduan.</li>
-      {% endfor %}
-    </ul>
-  </body>
+    {% endfor %}
+  </ul>
+</body>
 </html>
