@@ -2,7 +2,7 @@ from django.urls import path
 from .views import (
     WargaListView, WargaDetailView, WargaCreateView,
     PengaduanListView, PengaduanCreateView,
-    WargaUpdateView   # <— tambah ini
+    WargaUpdateView, WargaDeleteView,
 )
 
 urlpatterns = [
@@ -10,6 +10,7 @@ urlpatterns = [
     path('tambah/', WargaCreateView.as_view(), name='warga-tambah'),
     path('<int:pk>/', WargaDetailView.as_view(), name='warga-detail'),
     path('<int:pk>/edit/', WargaUpdateView.as_view(), name='warga-edit'),
+    path('<int:pk>/hapus/', WargaDeleteView.as_view(), name='warga-hapus'),
     path('pengaduan/', PengaduanListView.as_view(), name='pengaduan-list'),
     path('pengaduan/tambah/', PengaduanCreateView.as_view(), name='pengaduan-tambah'),
 ]
