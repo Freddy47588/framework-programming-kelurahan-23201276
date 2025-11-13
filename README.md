@@ -2,7 +2,7 @@
 # Framework Programming - Kelurahan App (23201276)
 
 Project ini merupakan hasil praktikum mata kuliah **Framework Programming**, menggunakan **Django Framework**.  
-Repository ini mencakup hasil pengerjaan dari **Modul 1 sampai Modul 4** dengan satu proyek utama.
+Repository ini mencakup hasil pengerjaan dari **Modul 1 sampai Modul 12** dengan satu proyek utama.
 
 ---
 
