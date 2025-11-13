@@ -24,9 +24,9 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | 2 | Relasi Model & QuerySet Lanjutan| ✅ |
 | 3 | Interaksi Pengguna dengan Django Forms & CreateView | ✅ |
 | 4 | Melengkapi CRUD dengan UpdateView & DeleteView | ✅ |
-| 5 | [Akan diisi setelah modul 4] | ⏳ |
+| 5 | [Akan diisi setelah modul 5] | ⏳ |
 | 6 | Menambahkan API | ✅ |
-| 7 | [Akan diisi setelah modul 4] | ⏳ |
+| 7 | [Akan diisi setelah modul 7] | ⏳ |
 
 ---
 
