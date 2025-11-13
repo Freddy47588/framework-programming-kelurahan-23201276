@@ -25,7 +25,7 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | 3 | Interaksi Pengguna dengan Django Forms & CreateView | ✅ |
 | 4 | Melengkapi CRUD dengan UpdateView & DeleteView | ✅ |
 | 5 | [Akan diisi setelah modul 5] | ⏳ |
-| 6 | Menambahkan API | ✅ |
+| 6 | Membuat API dengan Django REST Framework (DRF) | ✅ |
 | 7 | [Akan diisi setelah modul 7] | ⏳ |
 
 ---
