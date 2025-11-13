@@ -24,7 +24,7 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | 2 | Relasi Model & QuerySet Lanjutan| ✅ |
 | 3 | Interaksi Pengguna dengan Django Forms & CreateView | ✅ |
 | 4 | Melengkapi CRUD dengan UpdateView & DeleteView | ✅ |
-| 5 | [Akan diisi setelah modul 5] | ⏳ |
+| 5 | Mempelajari Konsep Fundamental API & Dunia JSON  | ✅ |
 | 6 | Membuat API dengan Django REST Framework (DRF) | ✅ |
 | 7 | [Akan diisi setelah modul 7] | ⏳ |
 
