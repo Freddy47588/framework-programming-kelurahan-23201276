@@ -20,7 +20,8 @@ from warga.views import PengaduanListView  # tambah import ini
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('warga/', include('warga.urls')),
+    path('warga/', include('warga.urls')), # URL untuk web
+    path('api/', include('warga.api_urls')), # URL untuk API
     path('pengaduan/', PengaduanListView.as_view(), name='pengaduan-list'),  # top-level
 ]
 
