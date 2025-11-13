@@ -15,6 +15,14 @@ class WargaDetailAPIView(RetrieveAPIView):
     queryset = Warga.objects.all()
     serializer_class = WargaSerializer
 
+class PengaduanListAPIView(ListAPIView):
+    queryset = Warga.objects.all()
+    serializer_class = WargaSerializer
+
+class PengaduanDetailAPIView(RetrieveAPIView):
+    queryset = Warga.objects.all()
+    serializer_class = WargaSerializer
+
 
 
 class PengaduanUpdateView(UpdateView):
