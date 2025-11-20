@@ -2,27 +2,39 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Warga, Pengaduan
 from .forms import WargaForm, PengaduanForm
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+# from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework import viewsets # Impor viewsets
 from .serializers import WargaSerializer
+from .models import Warga
+
+
 
 # --- API VIEWS ---
-class WargaListAPIView(ListAPIView):
-    queryset = Warga.objects.all()
+# class WargaListAPIView(ListAPIView):
+#     queryset = Warga.objects.all()
+#     serializer_class = WargaSerializer
+
+# class WargaDetailAPIView(RetrieveAPIView):
+#     queryset = Warga.objects.all()
+#     serializer_class = WargaSerializer
+
+# class PengaduanListAPIView(ListAPIView):
+#     queryset = Warga.objects.all()
+#     serializer_class = WargaSerializer
+
+# class PengaduanDetailAPIView(RetrieveAPIView):
+#     queryset = Warga.objects.all()
+#     serializer_class = WargaSerializer
+
+
+class WargaViewSet(viewsets.ModelViewSet):
+    queryset = Warga.objects.all().order_by('-tanggal_registrasi')
     serializer_class = WargaSerializer
 
 
-class WargaDetailAPIView(RetrieveAPIView):
+class WargaPengaduanSet(viewsets.ModelViewSet):
     queryset = Warga.objects.all()
     serializer_class = WargaSerializer
-
-class PengaduanListAPIView(ListAPIView):
-    queryset = Warga.objects.all()
-    serializer_class = WargaSerializer
-
-class PengaduanDetailAPIView(RetrieveAPIView):
-    queryset = Warga.objects.all()
-    serializer_class = WargaSerializer
-
 
 
 class PengaduanUpdateView(UpdateView):
