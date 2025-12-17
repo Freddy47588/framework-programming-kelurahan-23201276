@@ -9,6 +9,7 @@ from .serializers import PengaduanSerializer
 from .models import Warga
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.permissions import IsAdminUser
+from rest_framework.filters import SearchFilter, OrderingFilter
 
 
 
@@ -33,6 +34,10 @@ class WargaViewSet(viewsets.ModelViewSet):
     queryset = Warga.objects.all().order_by('-tanggal_registrasi')
     serializer_class = WargaSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
+    
+    filter_backends = [SearchFilter, OrderingFilter]
+    search_fields = ['nama_lengkap', 'nik', 'alamat']
+    ordering_fields = ['nama_lengkap', 'tanggal_registrasi']
 
 
 class PengaduanViewSet(viewsets.ModelViewSet):
