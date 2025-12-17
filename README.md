@@ -26,7 +26,13 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | 4 | Melengkapi CRUD dengan UpdateView & DeleteView | ✅ |
 | 5 | Mempelajari Konsep Fundamental API & Dunia JSON  | ✅ |
 | 6 | Membuat API dengan Django REST Framework (DRF) | ✅ |
-| 7 | [Akan diisi setelah modul 7] | ⏳ |
+| 7 | API Interaktif Penuh dengan ViewSet & Routers | ✅ |
+| 9 | Mengamankan API dengan Autentikasi & Permissions | ✅ |
+| 10 | [Akan diisi setelah modul 7] | ⏳ |
+| 11 | [Akan diisi setelah modul 11] | ⏳ |
+| 12 | [Akan diisi setelah modul 12] | ⏳ |
+
+
 
 ---
 
