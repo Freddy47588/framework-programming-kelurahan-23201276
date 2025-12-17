@@ -17,11 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from warga.views import PengaduanListView  # tambah import ini
+from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('warga/', include('warga.urls')), # URL untuk web
     path('api/', include('warga.api_urls')), # URL untuk API
-    path('pengaduan/', PengaduanListView.as_view(), name='pengaduan-list'),  # top-level
+    path('pengaduan/', PengaduanListView.as_view(), name='pengaduan-list'), 
+    path('api/auth/token/', obtain_auth_token, name='api-token'),
 ]
 
