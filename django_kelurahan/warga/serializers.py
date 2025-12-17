@@ -8,6 +8,5 @@ class WargaSerializer(serializers.ModelSerializer):
         fields = ['id', 'nik', 'nama_lengkap', 'alamat', 'no_telepon']
 class PengaduanSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Warga
-        # Tentukan field dari model pengaduan yang ingin kita ekspos di API
-        fields = ['judul', 'deskripsi', 'status', 'pelapor']
+        model = Pengaduan
+        fields = ['id', 'judul', 'deskripsi', 'status', 'pelapor']
