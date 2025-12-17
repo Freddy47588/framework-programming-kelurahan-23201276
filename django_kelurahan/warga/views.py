@@ -41,9 +41,13 @@ class WargaViewSet(viewsets.ModelViewSet):
 
 
 class PengaduanViewSet(viewsets.ModelViewSet):
-    queryset = Pengaduan.objects.all()
+    queryset = Pengaduan.objects.all().order_by('-tanggal_lapor')
     serializer_class = PengaduanSerializer
     permission_classes = [IsAdminUser]
+    
+    filter_backends = [SearchFilter, OrderingFilter]
+    search_fields = ['judul', 'deskripsi']
+    ordering_fields = ['status', 'tanggal_lapor']
 
 
 class PengaduanUpdateView(UpdateView):
