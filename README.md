@@ -28,7 +28,7 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | 6 | Membuat API dengan Django REST Framework (DRF) | ✅ |
 | 7 | API Interaktif Penuh dengan ViewSet & Routers | ✅ |
 | 9 | Mengamankan API dengan Autentikasi & Permissions | ✅ |
-| 10 | [Akan diisi setelah modul 7] | ⏳ |
+| 10 | [Akan diisi setelah modul 10] | ⏳ |
 | 11 | [Akan diisi setelah modul 11] | ⏳ |
 | 12 | [Akan diisi setelah modul 12] | ⏳ |
 
