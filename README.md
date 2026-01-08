@@ -29,8 +29,7 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | 9 | Mengamankan API dengan Autentikasi & Permissions | ✅ |
 | 10 | Menambahkan Fitur: Filtering, Searching, & Pagination| ✅ |
 | 11 | Konsep Fundamental API & Dunia JSON | ✅ |
-| 12 |  Dokumentasi API dengan Swagger/OpenAPI
- | ✅ |
+| 12 |  Dokumentasi API dengan Swagger/OpenAPI | ✅ |
 
 
 
