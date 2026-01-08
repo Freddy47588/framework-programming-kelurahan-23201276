@@ -28,8 +28,9 @@ Setiap modul menambahkan fitur baru sesuai panduan dosen.
 | 7 | API Interaktif Penuh dengan ViewSet & Routers | ✅ |
 | 9 | Mengamankan API dengan Autentikasi & Permissions | ✅ |
 | 10 | Menambahkan Fitur: Filtering, Searching, & Pagination| ✅ |
-| 11 | [Akan diisi setelah modul 11] | ⏳ |
-| 12 | [Akan diisi setelah modul 12] | ⏳ |
+| 11 | Konsep Fundamental API & Dunia JSON | ✅ |
+| 12 |  Dokumentasi API dengan Swagger/OpenAPI
+ | ✅ |
 
 
 
